@@ -4,7 +4,7 @@ A Flutter package that synchronizes scroll activity across multiple PageViews wi
 viewport configurations. Perfect for creating coordinated scrolling experiences across multiple
 PageViews.
 
-![preview](docs/preview.gif)
+![preview](../docs/preview.gif)
 
 ## Features
 
@@ -20,7 +20,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  linked_pageview: ^1.0.0
+  linked_pageview: ^1.0.1
 ```
 
 Run in terminal:

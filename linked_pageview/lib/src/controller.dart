@@ -64,6 +64,13 @@ class LinkedPageControllerGroup {
   }
 
   void resetScroll() => jumpTo(0.0);
+
+  void dispose() {
+    for (var controller in _controllers) {
+      controller.dispose();
+    }
+    _controllers.clear();
+  }
 }
 
 /// This class provides change notification for [LinkedPageControllerGroup]'s
