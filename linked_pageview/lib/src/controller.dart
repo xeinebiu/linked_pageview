@@ -160,6 +160,9 @@ class _LinkedPageController extends LinkedPageController {
       physics: physics,
       context: context,
       oldPosition: oldPosition,
+      initialPage: initialPage,
+      viewportFraction: viewportFraction,
+      keepPage: keepPage,
     );
   }
 
@@ -182,6 +185,9 @@ class _LinkedScrollPosition extends LinkedPagePosition {
     this.owner, {
     required super.physics,
     required super.context,
+    required super.initialPage,
+    required super.keepPage,
+    required super.viewportFraction,
     super.oldPosition,
   });
 

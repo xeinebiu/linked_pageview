@@ -314,9 +314,9 @@ class LinkedPagePosition extends ScrollPositionWithSingleContext
   LinkedPagePosition({
     required super.physics,
     required super.context,
-    this.initialPage = 0,
-    bool keepPage = true,
-    double viewportFraction = 1.0,
+    required this.initialPage,
+    required keepPage,
+    required viewportFraction,
     super.oldPosition,
   })  : assert(viewportFraction > 0.0),
         _viewportFraction = viewportFraction,

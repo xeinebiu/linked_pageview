@@ -1,3 +1,7 @@
+## 1.1.3
+
+* Fix: ``initialPage``, ``keepPage``, ``viewportFraction`` forwarding on `LinkedPagePosition`
+
 ## 1.1.2
 
 * Fix: Exported `ExpandableLinkedPageView` widget
