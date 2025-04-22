@@ -1,3 +1,9 @@
+## 1.1.1
+
+* Fix: Exported `ExpandableLinkedPageView` widget
+    - The widget was added in 1.1.0 but not exported from the package
+    - Now available for external use via package imports
+
 ## 1.1.0
 
 * Feat: Added `ExpandableLinkedPageView` widget

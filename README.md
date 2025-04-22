@@ -23,7 +23,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  linked_pageview: ^1.1.0
+  linked_pageview: ^1.1.1
 ```
 
 Run in terminal:
