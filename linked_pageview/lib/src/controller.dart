@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:linked_pageview/src/pageview.dart';
+
+import 'pageview.dart';
 
 class LinkedPageControllerGroup {
   LinkedPageControllerGroup() {
