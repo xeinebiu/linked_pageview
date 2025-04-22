@@ -1,6 +1,6 @@
 name: linked_pageview
 description: "Synchronize scroll activity across multiple PageViews"
-version: 1.1.1
+version: 1.1.2
 homepage: https://github.com/xeinebiu/linked_pageview
 
 environment:
