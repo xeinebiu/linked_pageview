@@ -68,7 +68,7 @@ class LinkedPageControllerGroup {
 
   void dispose() {
     for (var controller in _controllers) {
-      controller.dispose();
+      controller._internalDispose();
     }
     _controllers.clear();
   }
@@ -129,6 +129,10 @@ class _LinkedPageController extends LinkedPageController {
   void dispose() {
     _group._controllers.remove(this);
 
+    super.dispose();
+  }
+
+  void _internalDispose() {
     super.dispose();
   }
 

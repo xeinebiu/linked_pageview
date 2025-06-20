@@ -4,7 +4,7 @@ A Flutter package that synchronizes scroll activity across multiple PageViews wi
 viewport configurations. Perfect for creating coordinated scrolling experiences across multiple
 PageViews.
 
-![preview](../docs/preview.gif)
+![preview](docs/preview.gif)
 
 ## Features
 
@@ -23,7 +23,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  linked_pageview: ^1.1.3
+  linked_pageview: ^1.1.4
 ```
 
 Run in terminal:
@@ -86,12 +86,12 @@ You can use either:
 
 ```dart
 ExpandableLinkedPageView(
-  controller: controller1,
-  children: [
-    Container(height: 200, color: Colors.red),
-    Container(height: 400, color: Colors.green),
-    Container(height: 300, color: Colors.blue),
-  ],
+controller: controller1,
+children: [
+Container(height: 200, color: Colors.red),
+Container(height: 400, color: Colors.green),
+Container(height: 300, color: Colors.blue),
+],
 ),
 ```
 
@@ -99,12 +99,12 @@ Or with builder:
 
 ```dart
 ExpandableLinkedPageView.builder(
-  controller: controller2,
-  itemCount: 3,
-  itemBuilder: (context, index) => Container(
-    height: 200.0 + index * 100,
-    color: Colors.primaries[index],
-  ),
+controller: controller2,
+itemCount: 3,
+itemBuilder: (context, index) => Container(
+height: 200.0 + index * 100,
+color: Colors.primaries[index],
+),
 ),
 ```
 
