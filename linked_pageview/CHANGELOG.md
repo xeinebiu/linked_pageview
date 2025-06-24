@@ -1,3 +1,6 @@
+## 1.1.4 Handle ``Cannot get size from a render object that has been marked dirty for layout.`` on
+`_SizeReportingWidgetState`
+
 ## 1.1.4 ``ConcurrentModificationError`` on [LinkedPageControllerGroup.dispose]
 
 * Fix: ``initialPage``, ``keepPage``, ``viewportFraction`` forwarding on `LinkedPagePosition`

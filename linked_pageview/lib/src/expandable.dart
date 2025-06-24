@@ -419,12 +419,23 @@ class _SizeReportingWidgetState extends State<_SizeReportingWidget> {
   }
 
   void _notifySize() {
-    final context = _widgetKey.currentContext;
-    if (context == null) return;
-    final size = context.size;
-    if (_oldSize != size) {
-      _oldSize = size;
-      widget.onSizeChange(size!);
+    try {
+      final context = _widgetKey.currentContext;
+
+      if (context == null) return;
+
+      final size = context.size;
+
+      if (_oldSize != size) {
+        _oldSize = size;
+
+        if (size != null) {
+          widget.onSizeChange(size);
+        }
+      }
+    } catch (e) {
+      // Cannot get size from a render object that has been marked dirty for layout.
+      // ignore
     }
   }
 }
